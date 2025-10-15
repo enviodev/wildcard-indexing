@@ -9,6 +9,4 @@ type Transfer {
   to: String!
   # contract is the token contract address
   contract: String!
-  # transaction is the transaction hash
-  transaction: String!
 }

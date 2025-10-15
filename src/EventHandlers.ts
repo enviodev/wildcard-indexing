@@ -8,7 +8,6 @@ ERC20.Transfer.handler(
       from: event.params.from,
       to: event.params.to,
       contract: event.srcAddress,
-      transaction: event.transaction.hash,
     });
   },
   { wildcard: true },

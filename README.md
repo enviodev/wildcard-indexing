@@ -5,6 +5,8 @@ _For a complete guide to all [Envio](https://envio.dev) indexer features, visit 
 With **HyperIndex**, developers can enable **wildcard indexing**, allowing them to index events from **any contract** that matches a given event signature.
 This is especially useful when working with contracts that follow common standards like **ERC20**, **ERC721**, or **ERC1155**.
 
+You can learn more about wildcard indexing in the documentation: [https://docs.envio.dev/docs/HyperIndex/wildcard-indexing](https://docs.envio.dev/docs/HyperIndex/wildcard-indexing)
+
 To enable wildcard indexing, simply pass `wildcard: true` in the handler configuration:
 
 ```ts
