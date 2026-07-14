@@ -1,6 +1,8 @@
-import { ERC20 } from "generated";
+import { indexer } from "envio";
 
-ERC20.Transfer.handler(
+
+indexer.onEvent(
+  { contract: "ERC20", event: "Transfer", wildcard: true },
   async ({ event, context }) => {
     context.Transfer.set({
       id: `${event.chainId}_${event.block.number}_${event.logIndex}`,
@@ -9,6 +11,5 @@ ERC20.Transfer.handler(
       to: event.params.to,
       contract: event.srcAddress,
     });
-  },
-  { wildcard: true },
+  }
 );
