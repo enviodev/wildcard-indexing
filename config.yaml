@@ -1,5 +1,6 @@
 # yaml-language-server: $schema=./node_modules/envio/evm.schema.json
 name: Wildcard Indexing
+disable_default_cross_chain: true # recommended; default in HyperIndex v4
 description: Index all events matching a specified event signature without requiring the contract address
 chains:
     - id: 1 # Ethereum Mainnet
